@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Registration Form</title>
+</head>
+<body class="bg-gray-200">
+    <div class="container mx-auto mt-8">
+        <form id="doo" class="bg-white max-w-md mx-auto p-6 rounded shadow-md">
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-center">Registration Form</h3>
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-600">Name<span class="text-red-500">*</span></label>
+                    <input required type="text" id="name" name="name" placeholder="Name of student" class="w-full px-3 py-2 border rounded-md">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-600">Email<span class="text-red-500">*</span></label>
+                    <input required type="email" id="email" name="email" placeholder="example@gmail.com" class="w-full px-3 py-2 border rounded-md">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-sm font-medium text-gray-600">Password<span class="text-red-500">*</span></label>
+                    <input type="password" id="password" name="password" required placeholder="Password" class="w-full px-3 py-2 border rounded-md">
+                </div>
+                <div class="mb-4">
+                    <label for="dob" class="block text-sm font-medium text-gray-600">Date of Birth<span class="text-red-500">*</span></label>
+                    <input type="date" id="dob" name="dob" required placeholder="Name of student" class="w-full px-3 py-2 border rounded-md">
+                </div>
+                <div class="mb-4">
+                    <input type="checkbox" id="acceptTerms" name="acceptTerms" class="mr-2">
+                    <label for="acceptTerms" class="text-gray-600">Accept Terms & Conditions</label>
+                </div>
+                <button class="bg-blue-500 text-white px-4 py-2 w-full rounded-md hover:bg-blue-600" type="submit"><h4>Submit</h4></button>
+            </div>
+        </form>
+        <div class="mt-8 text-center text-darkslateblue">
+            <h2 class="text-2xl font-semibold">Entries</h2>
+            <div id="entries"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
